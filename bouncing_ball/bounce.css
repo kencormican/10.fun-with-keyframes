@@ -1,0 +1,27 @@
+
+.box {
+	 position: absolute; 
+	 top: 0px; 
+	 left: 0px;
+	 background-color: #0799d3;
+	 width: 100px;
+	 height: 100px;
+	 border-radius: 50%;
+	 animation-name: jump;
+	 animation-duration: 1s;
+	 animation-timing-function: ease-in-out;
+	 animation-iteration-count: infinite;
+	 animation-direction: alternate;
+
+}
+
+@keyframes jump{
+  from {
+    top: 0%; /*top position*/
+	transform: translateX(15px) rotate(0); /*left position */
+  }
+  to {
+    top: 85%; /*bottom position*/
+	transform: translateX(1400px) rotate(2turn); /*right position*/
+  }
+}
